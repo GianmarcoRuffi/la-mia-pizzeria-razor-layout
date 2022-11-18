@@ -1,6 +1,8 @@
-﻿<a class="btn btn-primary btn-lg" asp-area="" asp-controller="Home" asp-action="Index">Torna alla pagina principale</a>
+﻿@{
+    Layout = "_LayoutSnacks";
+}
 
-
+<a class="btn btn-primary btn-lg" asp-area="" asp-controller="Home" asp-action="Index">Torna alla pagina principale</a>
 <h1>Razor Snacks</h1>
 
 
@@ -14,7 +16,7 @@ Stampare il nostro nome e cognome all'interno di un tag h2.*@
     var cognome = "Ruffi";
 }
 
-<h2>1. @nome @cognome</h2>
+<h2>1. <span>Nome: @nome - Cognome: @cognome</span></h2>
 
 @*2. Creare una funzione che stampa la somma dei numeri che vanno da 1 a n (con n passato come parametro - n incluso)
 Stampare dentro uno span il risultato.*@
